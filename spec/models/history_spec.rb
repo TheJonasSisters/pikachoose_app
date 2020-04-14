@@ -1,3 +1,4 @@
+require 'rails_helper'
 RSpec.describe History, type: :model do
   it "should validate comment" do
     history = History.create
