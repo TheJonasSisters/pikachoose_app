@@ -122,26 +122,30 @@ div.film-info p {
 // About page
 #aboutpage {
   padding-top: 20px;
-  width: 550px;
+  width: 700px;
   margin: auto;
 }
 
 img{
-  width: 150px;
-  height:150px;
-  border-radius:50%;
-  float: left;
+  width: 50%;
+  height:auto;
+  display:flex;
+
+}
+#button{
+  padding: 10px;
+  margin:10px;
 }
 
-.about_us_imgs{
-  width: 150px;
-  margin-left: 10px;
-  float: left;
-}
+// .about_us_imgs{
+//   width: 150px;
+//   margin-left: 10px;
+//   float: left;
+// }
 
-.text{
-  text-align:center;
-}
+// .text{
+//   text-align:center;
+// }
 /*
  *
  * HistoryShow Component
