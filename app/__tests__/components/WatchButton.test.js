@@ -18,7 +18,7 @@ describe('WatchButton component', () => {
   
   it('Test click event', () => {
     const mockCallBack = jest.fn();
-    const button = mount((<Button onClick={mockCallBack}>Ok!</Button>));
+    const button = mount((<Button onClick={mockCallBack}>PikaChoose!</Button>));
     button.find("Button").simulate('click');
     expect(mockCallBack.mock.calls.length).toEqual(1);
   });
