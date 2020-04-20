@@ -12,8 +12,5 @@ describe('App component', () => {
     it('Renders without crashing', () => {
       shallow(<App />)
     })
-    it('Renders without crashing', () => {
-        shallow(<App />)
-      })
-
 })
+
