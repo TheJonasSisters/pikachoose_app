@@ -7,10 +7,24 @@ import Adapter from "enzyme-adapter-react-16";
 import GenreButtons from "../../javascript/components/components/GenreButtons";
 import sinon from "sinon";
 import fetch from 'isomorphic-fetch';
+
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('GenreButtons component', () => {
   it('Renders without crashing', () => {
     shallow(<GenreButtons />)
   })
-})
+});
+
+let wrapper;
+beforeEach(() => {
+    wrapper = shallow(<GenreButtons />);
+});
+describe('<GenreButtons /> rendering', () => {
+    it('should render one <h5>', () => {
+        expect(wrapper.find('h5')).toHaveLength(1);
+    });
+it('should render 3 <Button>', () => {
+        expect(wrapper.find(Button)).toHaveLength(3);
+    });
+});
