@@ -15,7 +15,6 @@ const FavoriteIndex = (props) => {
                   <p className="poster-image">
                     <img src={`https://image.tmdb.org/t/p/w185/${favorite.poster_path}`}
                     />
-
                     <Badge color="secondary">
                       { favorite.vote_average * 10 }<span className="badge-percentage">%</span>
                     </Badge>

@@ -28,3 +28,17 @@ it('should render 3 <Button>', () => {
         expect(wrapper.find(Button)).toHaveLength(3);
     });
 });
+
+it('Test click event', () => {
+  const mockCallBack = jest.fn();
+  const button = mount((<Button onClick={mockCallBack}>Ok!</Button>));
+  button.find("Button").simulate('click');
+  expect(mockCallBack.mock.calls.length).toEqual(1);
+});
+
+describe(`Component: GenreButton`, () => {
+  test(`GenreButton renders with default props`, () => {
+    const wrapper = shallow(<GenreButtons />);
+    expect(wrapper).toMatchSnapshot();
+  });
+});

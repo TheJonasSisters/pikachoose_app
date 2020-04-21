@@ -9,6 +9,7 @@ import FavoriteIndex from "./pages/FavoriteIndex.js"
 import FavoriteShow from "./pages/FavoriteShow.js"
 import NotFoundPage from "./components/NotFoundPage.js"
 
+
 class App extends Component {
   constructor() {
     super()
@@ -26,37 +27,6 @@ class App extends Component {
     this.getFavorites()
   }
 
-  // generateRandomDecisionIndex = () => {
-  //   const { filmList } = this.state
-  //   // generate random number between 0 and filmList length
-  //   let randomIndex = Math.floor(Math.random() * Math.floor(filmList.length))
-  //   // retrieve random film from filmList
-  //   let decision = filmList[randomIndex]
-  //   // store the single record above to filmDecision
-  //   return decision
-  // }
-  //
-  // getFilms = () => {
-  //   const apiKey = process.env.REACT_APP_KEY
-  //
-  //   fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`)
-  //   .then((response) => {
-  //     if (response.status === 200) {
-  //       return response.json()
-  //     }
-  //   })
-  //   .then((films) => {
-  //     films = films.results
-  //     this.setState({filmList: films})
-  //     console.log("Entire Film List:", this.state.filmList)
-  //
-  //     // results come back empty if the state is deconstructed
-  //     // const { filmList, filmDecision } = this.state
-  //     // let decision = this.generateRandomDecisionIndex()
-  //     // this.setState({filmDecision: decision})
-  //     // console.log("Film Decision:", this.state.filmDecision)
-  //   })
-  // }
 
   getHistories = () => {
     fetch("/histories")
