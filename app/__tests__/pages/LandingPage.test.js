@@ -12,3 +12,9 @@ it('Landing Page renders without crashing', () => {
   shallow(<LandingPage/>)
 })
 
+describe(`Component: LandingPage`, () => {
+  test(`LandingPage renders with default props`, () => {
+    const wrapper = shallow(<LandingPage />);
+    expect(wrapper).toMatchSnapshot();
+  });
+});

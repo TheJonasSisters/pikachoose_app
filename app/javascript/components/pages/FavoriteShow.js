@@ -21,6 +21,7 @@ class FavoriteShow extends Component {
 
     // editable switches in between 'false' and 'true'
     this.setState({editable: !editable})
+    return editable
   }
 
   handleUpdate = (favorite) => {

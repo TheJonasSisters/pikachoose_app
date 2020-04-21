@@ -9,3 +9,10 @@ it('Header component has Navbar component', () => {
   const wrap = shallow(<Header/>)
   expect(wrap.text()).toEqual('<Navbar />')
 })
+
+describe(`Component: Header`, () => {
+  test(`Header renders with default props`, () => {
+    const wrapper = shallow(<Header />);
+    expect(wrapper).toMatchSnapshot();
+  });
+});

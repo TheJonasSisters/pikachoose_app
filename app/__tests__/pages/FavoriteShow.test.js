@@ -19,3 +19,18 @@ it('FavoriteShow renders one favorite', () => {
   expect(component.find('FavoriteShow')).toHaveLength(1)
 })
 
+it('Test click event', () => {
+    const mockCallBack = jest.fn();
+    const button = mount((<Button onClick={mockCallBack}>Remove Favorite</Button>));
+    button.find("Button").simulate('click');
+    expect(mockCallBack.mock.calls.length).toEqual(1);
+  });
+
+
+describe(`Component: FavoriteShow`, () => {
+    test(`FavoriteShow renders with default props`, () => {
+      const favoritesArr = [{id:1, title: "breakfast club"}]
+      const wrapper = mount(<FavoriteShow favorites={favoritesArr} match={{params: {id:1} }}/>)
+      expect(wrapper).toMatchSnapshot();
+    });
+  });

@@ -23,6 +23,12 @@ describe('WatchButton component', () => {
     expect(mockCallBack.mock.calls.length).toEqual(1);
   });
 
+  describe(`Component: WatchButton`, () => {
+    test(`WatchButton renders with default props`, () => {
+      const wrapper = shallow(<WatchButton />);
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 //   it('check the onClick callback', () => {  
 //     // GIVEN
 //     const renderDecisionBox = jest.fn();
