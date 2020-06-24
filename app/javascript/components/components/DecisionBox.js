@@ -74,6 +74,15 @@ class DecisionBox extends Component {
                 </Button>
               </p>
             }
+            {/* if not logged in, take the user to sign up page when they press 'add to favorite' */}
+            {!logged_in &&
+              <Button
+              className="fav-btn"
+              href="/users/sign_up"
+              color="success"
+              >
+              Add to Favorite</Button>
+             }
           </section>
           {/* <img src={Pikachu3} className="pikachu3" /> */}
         </Jumbotron>
