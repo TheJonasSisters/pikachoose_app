@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
       store_location_for(:user, request.fullpath)
     end
 
+    # after you sign in, you are directed to the home page
     def after_sign_in_path_for(user)
       "/"
     end

@@ -98,7 +98,7 @@ class App extends Component {
 
 
   render() {
-    
+
     const {
       logged_in,
       sign_in_path,
