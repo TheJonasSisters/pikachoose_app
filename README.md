@@ -19,12 +19,10 @@ To implement the tests, you should run:
 * yarn test (runs Jest)
 * rsepc spec (runs Rspec)
 
-(For more info, go to http://heyakwon.com/project3_notes)
 
----
 
 ## Important Links:
 
-* User Stories: https://docs.google.com/document/d/1Uet2t8wTUNYb2eNkNMNGTEYRkhobTtYTRsdjXU4WSRs/edit
+* Set up notes: http://heyakwon.com/project3_notes
 
 * Deployment: http://pikamovie.herokuapp.com
