@@ -1,6 +1,4 @@
-# README
-
-## PikaMovie App
+# README: PikaMovie App
 
 ## Setting up
 To create this project, we used:
