@@ -1,7 +1,7 @@
 # README: PikaMovie App
 
 ## What is PikaMovie?
-PikaMovie is an app that tackles the modern day decision fatigue by allowing to users quickly arrive at a decision that we must make ever so often:
+PikaMovie is an app that tackles the modern day decision fatigue by allowing to users quickly arrive at a decision that we must make ever so often (especially during a lockdown):
 What Movie To Watch?
 
 ## Important Links:
