@@ -1,5 +1,14 @@
 # README: PikaMovie App
 
+## What is PikaMovie?
+PikaMovie is an app that tackles the modern day decision fatigue by allowing to users quickly arrive at a decision that we must make ever so often:
+What Movie To Watch?
+
+## Important Links:
+
+* Set up notes: http://heyakwon.com/project3_notes
+* The app deployed: http://pikamovie.herokuapp.com
+
 ## Setting up
 To create this project, we used:
 * Ruby 2.6.3p2
@@ -20,9 +29,3 @@ To implement the tests, you should run:
 * rsepc spec (runs Rspec)
 
 
-
-## Important Links:
-
-* Set up notes: http://heyakwon.com/project3_notes
-
-* Deployment: http://pikamovie.herokuapp.com
